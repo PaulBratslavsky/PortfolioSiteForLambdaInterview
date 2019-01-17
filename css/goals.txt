@@ -1,0 +1,25 @@
+Basic Specification for Project
+
+1. Show case my basic understanding of HTML, CSS, and Javasript.
+2. Deploy to GitHub to be able to show on my entry interview.
+3. Be able to answer questions on the code used.
+
+BASIC SITE PARTS
+
+1. NAVIGATION 
+
+    Should be fixed and responsive.
+    Bonus: auto hide on scroll
+
+    a. Mobile First ( Completed )
+        - Display Name and Hamburger Menu
+        - Create Hamburger Link
+        - Create Nav Mobile View
+        - Write JS Code to handle the show and hide
+
+    b. Desktop View
+        - Do not show Hamburger Menu
+        - All Menu Items Should be visible on Desktop
+        
+
+2. HEADER SECTION

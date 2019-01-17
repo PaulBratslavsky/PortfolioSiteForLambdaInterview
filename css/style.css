@@ -1,0 +1,268 @@
+/*************************************
+        CSS VARIABLE DECLARATION
+*************************************/
+
+    :root {
+        --nav-section: #f3f5fb;
+        --header-section: #d22780;
+        --about-section: #f8b500;
+        --projects-section: rgba(243, 245, 251, 0.8);
+        --contact-section: #d22780;
+        --footer-section: #5e227f;
+    }
+
+/*************************************
+        GLOBAL CSS
+*************************************/
+
+/* GOOGLE FONTS & FONT SIZE START*/
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+    body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    h1 { 
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+/* GOOGLE FONTS & FONT SIZE END*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+/* LINK'S & LI'S */
+
+    a {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: gray;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+/* BODY */
+    body {
+        background: #ffffff;
+    }
+/*************************************
+        MOBILE FIRST
+*************************************/
+
+/* NAVIGATION */
+    div.main-nav_container {
+        display: none;
+    }
+
+    nav {
+        height: 75px;
+        width: 100%;
+
+        position: fixed;
+        top: 0;
+        left: 0; 
+        z-index: 10;
+
+        transition: 0.75s; 
+        background: var(--nav-section);
+
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1rem;
+    }
+
+    nav h1 {
+        color: #d22780;
+    }
+
+    .show {
+        display: block !important;
+    }
+
+/* MOBILE NAV CSS START */
+    .main-nav__items {
+        position: absolute;
+        top: 75px;
+        left: 0;
+
+        margin: 0;
+        width: 100vw;
+
+        background: #d22780;   
+    }
+
+    .main-nav__items a {
+        color: #f2f4fb;
+        width: 100%;
+        height: 5rem;
+
+        font-weight: 700;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-bottom: 4px solid #f2f4fb;
+    }
+
+    .main-nav__items a:first-child {
+        border-top: 4px solid #d22780; 
+    }
+
+    .main-nav__items a:hover {
+        color: #d22780;
+        background: #f2f4fb;
+        cursor: pointer;
+    }
+/* MOBILE NAV CSS END */
+
+/* Hamburger Button Start */
+    .hamburger-menu {
+        height: 50px;
+        width: 50px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border: solid #d22780 4px;
+        border-radius: 5px;
+
+    }
+
+    .hamburger-menu__line1,
+    .hamburger-menu__line2,
+    .hamburger-menu__line3 {
+        width: 35px;
+        height: 5px;
+        background-color: #d22780 ;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .transform .hamburger-menu__line1 { 
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .transform .hamburger-menu__line2 {
+        opacity: 0;
+    }
+    .transform .hamburger-menu__line3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+/* Hamburger Button End */
+
+/* HEADER */ 
+
+.main-header {
+    min-height: 100vh;
+    width: 100vw;
+
+
+    background: var(--header-section);
+    padding: 75px 1rem 1rem 1rem;
+    position: relative;
+
+    z-index: -2;
+}
+
+#left-cloud {
+    position: fixed;
+
+    width: 200px;
+    height: auto;
+
+    top: 100px;
+    left: 10%;
+
+    z-index: 1;
+}
+
+#right-cloud {
+    position: fixed;
+
+    width: 225px;
+    height: auto;
+
+    top: 300px;
+    right: 7%;
+
+    z-index: -3;
+}
+
+#rocket {
+    position: absolute;
+
+    width: 110px;
+    height: auto;
+
+    bottom: 2%;;
+    left: 45%;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me {
+    min-height: 100vh;
+    width: 100%;
+
+    background: var(--about-section);
+    color: #f3f5fb;
+    z-index: 1;
+
+    padding: 1rem;
+
+}
+
+/* MY PROJECTS SECTION */
+.my-projects {
+    min-height: 100vh;
+    width: 100%;
+
+    background: var(--projects-section);
+
+    z-index: -8;
+
+    padding: 1rem;
+}
+
+.contact-me {
+    min-height: 100vh;
+    width: 100%;
+
+    background: var(--contact-section);
+    color: #f3f5fb;
+    padding: 1rem;
+}
+
+/* Footer */
+.main-footer {
+    height: 65px;
+    width: 100%;
+    background: var(--footer-section);
+    color: #f3f5fb;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*************************************
+        MEDIA QUERIES
+*************************************/
