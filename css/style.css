@@ -8,7 +8,7 @@
         --about-section: #f8b500;
         --projects-section: rgba(243, 245, 251, 0.8);
         --contact-section: #d22780;
-        --footer-section: #5e227f;
+        --footer-section: #333333;
     }
 
 /*************************************
@@ -302,9 +302,10 @@
 }
 
 .my-projects__single {
-    flex-grow: 1;
+    flex: 1;
     margin: 1rem 1.25rem;
     padding: 0.75rem;
+    min-width: 310px;
 
     /*
     border-radius: 5px;
@@ -339,14 +340,46 @@
 }
 
 .contact-me {
-    min-height: 20%;
+    min-height: calc( 100vh - 256px );
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     background: var(--contact-section);
     color: #f3f5fb;
     padding: 1rem;
 }
 
+.contact-me h2 {
+    font-size: 2rem;
+}
+
+.contact-me__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.contact-me__container  i,
+.contact-me__container  a {
+    font-size: 5.4rem;
+    margin: 0.5rem;
+    color: #f2f4fb;
+}
+
+
+
+#city {
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: -2px;
+}
 
 
 /* Footer */
