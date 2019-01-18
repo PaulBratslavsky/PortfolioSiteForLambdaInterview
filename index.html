@@ -9,20 +9,23 @@
     <meta name="author" content="Paul Bratslavsky">
     <meta name="description" content="This is my Lambda Entry Interview showcase site. Demonstartes my basic knowledge in HTML, CSS, and Javasript.">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
     
 </head>
-<body>
-    <nav class="main-nav__fixed">
+<body id="top">
+    <nav  class="main-nav__fixed">
         <h1 class="main-nav__title">Paul Bratslavsky</h1>
         <div class="main-nav_container">
             <ul class="main-nav__items " onclick="onClickResetToggle()">
-                <a class="main-nav__item-link" href="#"><li class="main-nav__item">HOME</li></a>
-                <a class="main-nav__item-link" href="#"><li class="main-nav__item">ABOUT ME</li></a>
-                <a class="main-nav__item-link" href="#"><li class="main-nav__item">MY PROJECTS</li></a>
-                <a class="main-nav__item-link" href="#"><li class="main-nav__item">CONTACT ME</li></a>   
+                <a class="main-nav__item-link" href="#about-me"><li class="main-nav__item">ABOUT ME</li></a>
+                <a class="main-nav__item-link" href="#my-projects"><li class="main-nav__item">WHAT I DO</li></a>
+                <a class="main-nav__item-link" href="#contact-me"><li class="main-nav__item">LET'S CONNECT</li></a>
+                <a class="main-nav__item-link" href="index.html#top"><li class="main-nav__item">TOP</li></a>
+   
             </ul>
         </div>
         <div class="hamburger-menu">
@@ -40,30 +43,60 @@
         <img id="rocket" src="img/rocket.png" alt="A picture of a white outlined cloud.">
     </header>
 
-    <section class="about-me">
-        <div class="my-photo">
-            <img id="right-cloud" src="img/cloudy.png" alt="A picture of a white outlined cloud.">
+    <section id="about-me" class="about-me">
+        <div class="my-photo__container column">
+            <img id="my-photo" src="img/myface.jpg" alt="A picture of Paul Bratslavsky.">
         </div>
 
-        <div class="my-blurb">
-
+        <div class="my-blurb__container column">
+            <h2>ABOUT ME</h2>
+            <p>Aspiring Fullstack Web Developer<p> 
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Node Js</li>
+            </ul>
+                
+                <p>Whenever I am not coding or learning new things, you can find me at my local coffee shop enjoying a good cup of coffee with my fiance Ariya.</p>            
         </div>
     </section>
 
-    <section class="my-projects">
-        <section class="my-projects__single">
-        <header class="intro"><h2>Project One</h2></header>
-        <section class="overview"><p>This is the About Section</p></section>
-        <footer class="link"><p>This is the About Section</p></footer>
-        </section>
+    <section id="my-projects" class="my-projects">
+        <h2>WHAT I DO</h2>
+
+
+        <div class="my-projects__container">
+            <section class="my-projects__single">
+                <i class="fab fa-html5"></i> 
+                <header class="intro"><h3>HTML & CSS</h3></header>
+                <section class="overview"><p>This is the About Section</p></section>
+                <footer class="link"><p>more...</p></footer>
+            </section>
+
+            <section class="my-projects__single">
+                <i class="fab fa-js-square"></i>
+                <header class="intro"><h3>Javascript & Node JS</h3></header>
+                <section class="overview"><p>This is the About Section</p></section>
+                <footer class="link"><p>more...</p></footer>
+            </section>
+
+            <section class="my-projects__single">
+                <i class="fab fa-react"></i>
+                <header class="intro"><h3>React & Redux</h3></header>
+                <section class="overview"><p>This is the About Section</p></section>
+                <footer class="link"><p>more...</p></footer>
+            </section>
+        </div>
     </section>
 
-    <section class="contact-me">
+    <section id="contact-me" class="contact-me">
         <div class="social">
-            <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor</p>  
         </div>
         <div class="contact">
-            <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor dummy text sit amet</p>
         </div>
     </section>
 
